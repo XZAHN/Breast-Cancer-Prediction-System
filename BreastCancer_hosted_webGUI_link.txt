@@ -2,5 +2,5 @@ Name: Zion Oladokun
 Matric Number: 23CG034122
 Machine Learning Algorithm Used: Logistic Regression
 Model persistence method used: Joblib
-Live URL of the hosted application: https://breast-cancer-detection-23cg034122.onrender.com
+Live URL of the hosted application: https://breast-cancer-prediction-system-yyda.onrender.com/
 GitHub repository link: https://github.com/ZionOladokun/BreastCancer_Project
