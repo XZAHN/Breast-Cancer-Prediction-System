@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #e91e63;
+    --primary-hover: #c2185b;
+    --bg-color: #fce4ec;
+    --card-bg: #ffffff;
+    --text-color: #333;
+    --text-secondary: #666;
+    --shadow: 0 4px 20px rgba(0,0,0,0.1);
+    --radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #880e4f;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.btn {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.btn:hover {
+    background: var(--primary-hover);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.result-card {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: var(--shadow);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.prediction-value {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.malignant .prediction-value {
+    color: #d32f2f;
+}
+
+.benign .prediction-value {
+    color: #388e3c;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 1rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
